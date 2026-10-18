@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="SAVIN STORE — smart finds for everyday life. Browse useful products and order through WhatsApp.">
+  <title>SAVIN STORE | Smart Finds. Better Living.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">WELCOME TO SAVIN STORE · SMART FINDS FOR EVERYDAY LIFE</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="SAVIN STORE home">SAV<span>IN</span><small>STORE</small></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#about">About</a>
+    </nav>
+    <a class="button header-button" href="#products">Shop now ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR EVERYDAY DISCOVERY STORE</p>
+        <h1>Good finds.<br><em>Good life.</em></h1>
+        <p class="intro">Discover useful, stylish and affordable products for your everyday life. Find your next favourite at SAVIN STORE.</p>
+        <div class="actions"><a class="button" href="#products">Explore products ↗</a><a class="button button-outline" href="#categories">Browse categories</a></div>
+        <p class="small-note">Everyday essentials · Smart picks · Easy WhatsApp ordering</p>
+      </div>
+      <div class="hero-art" aria-label="SAVIN Store branded illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="shopping-bag"><span>S</span></div>
+        <div class="float-tag tag-top">✦ Smart everyday picks</div><div class="float-tag tag-bottom">SAVIN · EST. 2026</div>
+      </div>
+    </section>
+
+    <div class="trust-strip"><span>✦ Carefully picked products</span><span>♡ Everyday value</span><span>↗ Simple ordering</span><span>◉ Customer-first service</span></div>
+
+    <section class="section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR NEXT FAVOURITE</p><h2>Shop by category</h2></div><p>Explore useful finds for your home, routine and lifestyle.</p></div>
+      <div class="category-grid">
+        <a class="category category-green" href="#products"><span class="category-icon">⌚</span><strong>Gadgets</strong><small>Smart everyday tech</small></a>
+        <a class="category category-peach" href="#products"><span class="category-icon">✦</span><strong>Home & Living</strong><small>Make your space feel better</small></a>
+        <a class="category category-blue" href="#products"><span class="category-icon">♧</span><strong>Accessories</strong><small>Little things, big style</small></a>
+        <a class="category category-pink" href="#products"><span class="category-icon">♡</span><strong>Lifestyle</strong><small>Made for your routine</small></a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">THE SAVIN EDIT</p><h2>Featured products</h2></div><p>Demo items are included to show the layout. Edit products.js to add your real products and prices.</p></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="demo-warning">Demo content: confirm product availability, prices and delivery details before accepting orders.</p>
+    </section>
+
+    <section class="promo">
+      <div><p class="eyebrow">A BETTER WAY TO DISCOVER</p><h2>Your next great find is here.</h2><p>Follow SAVIN STORE for new arrivals, useful products and updates.</p></div>
+      <a class="button button-lime" href="#contact">Contact us ↗</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-art">✳</div>
+      <div><p class="eyebrow">A LITTLE ABOUT US</p><h2>Simple shopping.<br>Smarter choices.</h2><p class="body-copy">SAVIN STORE is a modern all-category store concept focused on useful finds, everyday style and a smooth customer experience. We're building our collection one smart pick at a time.</p><a class="button" href="#contact">Contact SAVIN ↗</a></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" href="#home">SAV<span>IN</span><small>STORE</small></a><p>Smart finds for everyday life. Discover products that make your daily routine a little better.</p></div>
+      <div><h3>Explore</h3><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#about">About us</a></div>
+      <div><h3>Contact</h3><p>Questions about a product or order?</p><a class="footer-whatsapp" id="footerWhatsapp" href="#products">Message us on WhatsApp ↗</a><p class="footer-hint">Update your WhatsApp number in config.js before publishing.</p></div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> SAVIN STORE. All rights reserved.</span><span>Built for better everyday discoveries.</span></div>
+  </footer>
+  <script src="config.js"></script>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
