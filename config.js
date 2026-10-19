@@ -7,5 +7,5 @@
 window.SAVIN_CONFIG = {
   storeName: "SAVIN STORE",
   currency: "PKR",
-  whatsappNumber: "923000000000"
+  whatsappNumber: "923301398292"
 };
