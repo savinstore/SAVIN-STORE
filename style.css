@@ -12,3 +12,27 @@ footer{background:#122e27;color:white;padding:42px 22px 20px}.footer-grid{max-wi
   object-fit: contain;
   display: block;
 }
+
+.search-wrap {
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.search-wrap label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #173f35;
+}
+
+.search-wrap input {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #b9c5b5;
+  border-radius: 14px;
+  background: #fff;
+  color: #15211e;
+  font-size: 16px;
+  outline-color: #173f35;
+}
