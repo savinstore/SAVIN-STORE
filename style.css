@@ -38,8 +38,9 @@ footer{background:#122e27;color:white;padding:42px 22px 20px}.footer-grid{max-wi
 }
 
 .brand-logo {
-  width: 150px;
-  height: 80px;
+  width: 180px;
+  height: 90px;
   object-fit: contain;
   display: block;
 }
+
