@@ -44,3 +44,37 @@ footer{background:#122e27;color:white;padding:42px 22px 20px}.footer-grid{max-wi
   display: block;
 }
 
+/* Header search bar */
+.site-header .header-search {
+  display: block;
+  width: 180px;
+  margin: 0 12px;
+}
+
+.site-header .header-search input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b9c5b5;
+  border-radius: 24px;
+  background: #fff;
+  color: #15211e;
+  font-size: 14px;
+}
+
+.site-header .header-button {
+  background: #173f35;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .site-header .header-search {
+    width: 125px;
+    margin: 0 6px;
+  }
+
+  .site-header .header-search input {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
