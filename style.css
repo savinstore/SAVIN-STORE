@@ -93,3 +93,14 @@ html, body {
 .site-header {
   margin-top: 0 !important;
 }
+
+/* Make top space thinner */
+body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.site-header {
+  margin-top: 0 !important;
+  padding-top: 8px !important;
+}
