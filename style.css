@@ -77,4 +77,11 @@ footer{background:#122e27;color:white;padding:42px 22px 20px}.footer-grid{max-wi
     font-size: 12px;
   }
 }
+/* Make top space thinner */
+body {
+  margin-top: 0;
+}
 
+.site-header {
+  margin-top: 0;
+}
