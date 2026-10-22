@@ -105,31 +105,38 @@ body {
   padding-top: 8px !important;
 }
 
-/* SAVIN STORE search bar visibility fix */
-.site-header .header-search {
-  display: block !important;
-  flex: 1 1 140px !important;
-  width: auto !important;
-  min-width: 100px !important;
-  margin: 0 8px !important;
-}
+/* SAVIN STORE mobile header fix */
+@media (max-width: 600px) {
+    .site-header {
+        padding: 8px 12px !important;
+        gap: 8px !important;
+        min-height: 0 !important;
+    }
 
-.site-header .header-search input {
-  display: block !important;
-  width: 100% !important;
-  height: 44px !important;
-  box-sizing: border-box !important;
-  background: #ffffff !important;
-  color: #15211e !important;
-  border: 1px solid #b9c5b5 !important;
-  padding: 10px 12px !important;
-  font-size: 14px !important;
-}
+    .brand-logo {
+        width: 76px !important;
+        height: 48px !important;
+    }
 
-.site-header .header-button {
-  white-space: nowrap !important;
-  font-size: 12px !important;
-  padding: 10px 12px !important;
-}
+    .site-header .header-search {
+        width: auto !important;
+        flex: 1 1 90px !important;
+        min-width: 0 !important;
+        margin: 0 4px !important;
+    }
 
+    .site-header .header-search input {
+        width: 100% !important;
+        padding: 8px 6px !important;
+        font-size: 12px !important;
+    }
+
+    .site-header .header-button {
+        white-space: nowrap !important;
+        width: auto !important;
+        min-width: max-content !important;
+        padding: 10px 12px !important;
+        font-size: 12px !important;
+    }
+}
 
