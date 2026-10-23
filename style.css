@@ -164,3 +164,50 @@ body {
   width: 30px;
   height: 30px;
 }
+/* WhatsApp floating button improvements */
+.floating-whatsapp {
+  width: 64px;
+  height: 64px;
+  bottom: 85px;
+  right: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.floating-whatsapp svg {
+  width: 34px;
+  height: 34px;
+}
+
+/* Animated WhatsApp help message */
+.whatsapp-tooltip {
+  position: fixed;
+  bottom: 103px;
+  right: 94px;
+  background: white;
+  color: #173f35;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  z-index: 998;
+  animation: whatsappMessage 6s infinite;
+}
+
+@keyframes whatsappMessage {
+  0%, 15% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  25%, 70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  85%, 100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
