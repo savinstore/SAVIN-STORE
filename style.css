@@ -139,4 +139,28 @@ body {
         font-size: 12px !important;
     }
 }
+/* SAVIN STORE Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: transform 0.2s ease;
+}
 
+.floating-whatsapp:hover {
+  transform: scale(1.08);
+}
+
+.floating-whatsapp svg {
+  width: 30px;
+  height: 30px;
+}
