@@ -11,25 +11,67 @@
 <body>
   <div class="announcement">WELCOME TO SAVIN STORE · SMART FINDS FOR EVERYDAY LIFE</div>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="SAVIN STORE home">
-  <img src="SAVIN_STORE_transparent.png" alt="SAVIN STORE Logo" class="brand-logo">
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav id="navLinks">
-      <a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#about">About</a>
-    </nav><div class="search-wrap header-search">
-  <input
-    type="search"
-    id="headerSearch"
-    placeholder="Search products..."
-    aria-label="Search products"
-  >
-    </div>
-<a href="#products" class="cart-icon" id="cartButton" aria-label="Shopping bag">
-  🛍️
-</a>
 
-<a class="button header-button" href="#products">Shop now ↗</a>
+  <!-- FIRST ROW -->
+  <div class="header-top">
+
+    <!-- Menu Button -->
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open menu"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <!-- Original SAVIN STORE Logo -->
+    <a class="brand" href="#home"
+       aria-label="SAVIN STORE home">
+
+      <img
+        src="SAVIN_STORE_transparent.png"
+        alt="SAVIN STORE Logo"
+        class="brand-logo">
+
+    </a>
+
+    <!-- Shop Now Button -->
+    <a class="button header-button"
+       href="#products">
+       Shop Now →
+    </a>
+
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- SECOND ROW SEARCH -->
+  <div class="search-wrap header-search">
+
+    <span class="search-icon" aria-hidden="true">⌕</span>
+
+    <input
+      type="search"
+      id="headerSearch"
+      placeholder="Search for products..."
+      aria-label="Search products">
+
+    <button
+      class="search-button"
+      type="button"
+      aria-label="Search"
+      onclick="document.getElementById('headerSearch').focus()">
+      🔍
+    </button>
+
+  </div>
+
   </header>
 
   <main>
