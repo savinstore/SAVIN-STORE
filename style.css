@@ -211,3 +211,110 @@ body {
     transform: translateX(10px);
   }
 }
+
+/* SAVIN STORE NEW MOBILE HEADER */
+@media (max-width: 800px) {
+
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px 15px !important;
+    gap: 0 !important;
+    background: #f7f7f2;
+  }
+
+  /* First row */
+  .header-top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    min-height: 95px;
+    gap: 8px;
+  }
+
+  /* Menu */
+  .menu-toggle {
+    display: block;
+    grid-column: 1;
+    justify-self: start;
+    margin: 0 !important;
+    color: #173f35;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  /* Center logo */
+  .header-top .brand {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .header-top .brand-logo {
+    width: 100px !important;
+    height: 85px !important;
+    object-fit: contain;
+  }
+
+  /* Shop Now */
+  .header-top .header-button {
+    grid-column: 3;
+    justify-self: end;
+    padding: 11px 13px !important;
+    font-size: 12px !important;
+    white-space: nowrap;
+    background: #173f35;
+    color: white;
+  }
+
+  /* Navigation */
+  .site-header nav {
+    display: none;
+    top: 95px;
+  }
+
+  .site-header nav.open {
+    display: flex;
+  }
+
+  /* Second row search */
+  .site-header .header-search {
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 10px 0 0 !important;
+    padding: 0 !important;
+    flex: none !important;
+    border: 1px solid #d5dcd4;
+    border-radius: 18px;
+    background: white;
+    overflow: hidden;
+  }
+
+  .header-search .search-icon {
+    padding-left: 14px;
+    font-size: 25px;
+    color: #173f35;
+  }
+
+  .site-header .header-search input {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 14px 10px !important;
+    font-size: 14px !important;
+  }
+
+  .header-search .search-button {
+    align-self: stretch;
+    border: none;
+    background: #173f35;
+    color: white;
+    padding: 0 19px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
