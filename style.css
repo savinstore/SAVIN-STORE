@@ -251,8 +251,8 @@ body {
   }
 
   .header-top .brand-logo {
-    width: 100px !important;
-    height: 85px !important;
+    width: 125px !important;
+    height: 90px !important;
     object-fit: contain;
   }
 
