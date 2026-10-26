@@ -64,7 +64,7 @@
       const button = document.createElement("button");
       button.className = "button";
       button.type = "button";
-      button.textContent = "Ask to order ↗";
+      button.textContent = "Buy Now →";
       button.addEventListener("click", function () { askAbout(product); });
 
       info.append(category, title, price, button);
