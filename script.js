@@ -90,7 +90,27 @@ cartButton.addEventListener("click", function () {
 
   localStorage.setItem("savinCart", JSON.stringify(cart));
 
-  alert("Successfully added to cart ✔️");
+  // SAVIN STORE Cart Success Message
+let toast = document.getElementById("cartToast");
+
+if (!toast) {
+  toast = document.createElement("div");
+  toast.id = "cartToast";
+  document.body.appendChild(toast);
+}
+
+toast.innerHTML = `
+  <span>✔ Successfully added to cart</span>
+  <a href="#cart">Go To Cart →</a>
+`;
+
+toast.classList.add("show");
+
+clearTimeout(window.cartToastTimer);
+
+window.cartToastTimer = setTimeout(function () {
+  toast.classList.remove("show");
+}, 3000);
 });
 
       info.append(category, title, price, button, cartButton);
