@@ -66,8 +66,34 @@
       button.type = "button";
       button.textContent = "Buy Now →";
       button.addEventListener("click", function () { askAbout(product); });
+      // SAVIN STORE Add to Cart Button
+const cartButton = document.createElement("button");
+cartButton.className = "button add-to-cart";
+cartButton.type = "button";
+cartButton.textContent = "Add to Cart +";
 
-      info.append(category, title, price, button);
+cartButton.addEventListener("click", function () {
+  const cart = JSON.parse(localStorage.getItem("savinCart") || "[]");
+
+  const existing = cart.find(item => String(item.id) === String(product.id));
+
+  if (existing) {
+    existing.quantity += 1;
+  } else {
+    cart.push({
+      id: product.id || product.name,
+      name: product.name,
+      price: product.price,
+      quantity: 1
+    });
+  }
+
+  localStorage.setItem("savinCart", JSON.stringify(cart));
+
+  alert("Successfully added to cart ✔️");
+});
+
+      info.append(category, title, price, button, cartButton);
       card.append(art, info);
       grid.appendChild(card);
     });
